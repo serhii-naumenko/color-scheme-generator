@@ -21,7 +21,6 @@ inputColorEl.addEventListener('change', function(e) {
 
 document.body.addEventListener('click', function(e) {
   const targetId = e.target.id
-  console.log(targetId)
 
   if (selectorTargetId.includes(targetId)) {
     showSelectorMenu = !showSelectorMenu
