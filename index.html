@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="index.css">
+    <title>Color Scheme Generator</title>
+    <script src="./main.js" type="module" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <input
+        type="color"
+        class="input-color"
+        aria-label="choose color"
+        value="#F55A5A"
+        id="input-color"
+      >
+      <button
+        type="button"
+        class="scheme-selector"
+        title="chose color scheme"
+        id="scheme-selector"
+      >
+        <p class="current-scheme" id="current-scheme">monochrome</p> 
+        <img
+          src="./assets/grey-tick.svg"
+          alt="grey tick for schemes selector"
+          class="grey-tick"
+          id="grey-tick"
+        >
+        <div class="scheme-menu" id="scheme-menu"></div>
+      </button>
+      <button class="get-scheme-btn" id="get-scheme-btn" type="button">
+        Get color scheme
+      </button>
+    </header>
+    <main class="main" id="main"></main>
+  </body>
+</html>
