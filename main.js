@@ -114,6 +114,6 @@ function renderPalette(paletteAr) {
     `
   }).join('')
   mainEl.innerHTML = mainInnerHtml + `
-    <div id="notification">Color is copied!</div>
+    <div id="notification">Color was copied!</div>
   `
 }
